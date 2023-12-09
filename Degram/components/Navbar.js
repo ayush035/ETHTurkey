@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-import { IDKitWidget } from "@worldcoin/idkit";
-import  { ISuccessResult } from "@worldcoin/idkit";
+
 
 export default function Navbar() {
 
@@ -41,16 +40,7 @@ export default function Navbar() {
             <Link href="/profile">Profile</Link></div>
               {/* <div className=' mx-2 my-2 '> */}   
               <div className='hover:text-white delay-50 text-lg font-semibold font-mono '>
-        <IDKitWidget
-					action="my_action"
-					signal="my_signal"
-					onSuccess={onSuccess}
-					handleVerify={handleProof}
-					app_id="app_staging_030f6ab3958204bfc99ed18786d1d625"
-					// walletConnectProjectId="get_this_from_walletconnect_portal"
-				>
-					{({ open }) => <button onClick={open}>Verification</button>}
-				</IDKitWidget>
+        
 </div>                 
         <ConnectButton/>
             </ul>
